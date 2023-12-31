@@ -16,8 +16,29 @@ public class SecondLargestAndSecondSmallest {
         System.out.println(sec_Smallest);
     }
     // better solution
+    static void secLargestSmallest2(int [] arr){
+        int small = Integer.MAX_VALUE;
+        int secSmall = Integer.MAX_VALUE;
+        int large = Integer.MIN_VALUE;
+        int secLarge = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            small = Math.min(small,arr[i]);
+            large = Math.max(large,arr[i]);
+        }
+        for (int i = 0; i < arr.length; i++) {
+          if(arr[i] > secLarge && arr[i] != large){
+              secLarge = arr[i];
+          }
+          if(arr[i] < secSmall && arr[i] != small){
+              secSmall = arr[i];
+          }
+        }
+        System.out.println("The secondSmallest number is " + secSmall);
+        System.out.println("The secondLargest number is " + secLarge);
+    }
     public static void main(String[] args) {
         int [] arr = {1,2,3,6,8};
         secLargestSmallest(arr);
+        secLargestSmallest2(arr);
     }
 }
