@@ -36,9 +36,40 @@ public class SecondLargestAndSecondSmallest {
         System.out.println("The secondSmallest number is " + secSmall);
         System.out.println("The secondLargest number is " + secLarge);
     }
+    // optimal solution
+    static int secLargest(int [] arr){
+        int large = Integer.MIN_VALUE;
+        int secLarge = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] > large){
+                secLarge = large;
+                large = arr[i];
+            }
+            else if(arr[i] > secLarge && arr[i] != large){
+                secLarge = arr[i];
+            }
+        }
+        return secLarge;
+    }
+    static int secSmallest(int []arr){
+        int small = Integer.MAX_VALUE;
+        int secSmall = Integer.MAX_VALUE;
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]<small){
+                secSmall = small;
+                small = arr[i];
+            }
+            else if(arr[i]<secSmall && arr[i] != small){
+                secSmall = arr[i];
+            }
+        }
+        return secSmall;
+    }
     public static void main(String[] args) {
         int [] arr = {1,2,3,6,8};
         secLargestSmallest(arr);
         secLargestSmallest2(arr);
+        System.out.println(secLargest(arr));
+        System.out.println(secSmallest(arr));
     }
 }
