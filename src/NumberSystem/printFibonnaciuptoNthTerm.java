@@ -6,12 +6,9 @@ public class printFibonnaciuptoNthTerm {
         if (n == 1) {
             System.out.print(a);
         }
-        else if (n == 2) {
-            System.out.print(a + " " + b);
-        }
         else {
             System.out.print(a + " " + b + " ");
-            for (int i = 3; i <= n; i++) {
+            for (int i = 2; i <= n; i++) {
                 int c = a + b;
                 System.out.print(c + " ");
                 a = b;
