@@ -1,4 +1,4 @@
-package NumberSystem;
+package Number_Mathematics;
 
 //We initialise a sum to 0.
 //We can set a loop to iterate from 1 to n-1.

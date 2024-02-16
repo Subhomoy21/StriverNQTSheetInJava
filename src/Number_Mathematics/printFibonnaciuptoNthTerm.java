@@ -1,4 +1,4 @@
-package NumberSystem;
+package Number_Mathematics;
 
 public class printFibonnaciuptoNthTerm {
     static void printFibo(int n){

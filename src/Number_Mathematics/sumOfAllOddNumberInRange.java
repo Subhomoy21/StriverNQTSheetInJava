@@ -1,4 +1,4 @@
-package NumberSystem;
+package Number_Mathematics;
 import java.util.*;
 public class sumOfAllOddNumberInRange {
 

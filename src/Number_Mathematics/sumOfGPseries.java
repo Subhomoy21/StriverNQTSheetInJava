@@ -1,4 +1,4 @@
-package NumberSystem;
+package Number_Mathematics;
 
 public class sumOfGPseries {
     static double sum(int a , double ratio , int n){

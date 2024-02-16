@@ -1,4 +1,4 @@
-package NumberSystem;
+package Number_Mathematics;
 import java.util.Scanner;
 public class printFirstNEvenNumbers {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package NumberSystem;
+package Number_Mathematics;
 //Check if a number is Palindrome or Not
 public class PalindromeNumber {
     static boolean IsPalindrome(int n){
